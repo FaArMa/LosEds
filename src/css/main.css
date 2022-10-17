@@ -242,3 +242,13 @@ footer i {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .characters {
+        flex-direction: column;
+    }
+
+    .characters > div:nth-child(-n+2) {
+        margin-bottom: 1ch;
+    }
+}
