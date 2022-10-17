@@ -108,6 +108,39 @@ table td {
     padding: 10px 5px;
 }
 
+.characters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 1ch;
+}
+
+.characters figure {
+    border: 1px solid #000000;
+    padding: 0.25rem;
+    display: inline-block;
+}
+
+.characters figcaption {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.25rem;
+}
+
+.characters figure:hover > a > figcaption {
+    background-color: #e12f29;
+}
+
+.characters a {
+    text-decoration: none;
+}
+
+.characters p {
+    margin: 1ch;
+    text-align: left;
+}
+
 footer {
     align-items: center;
     border: 1px solid #000000;
