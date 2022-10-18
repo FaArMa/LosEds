@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ed, Edd y Eddy</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/lightbox.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -25,8 +26,46 @@
             </nav>
         </header>
         <!-- Contenido -->
-        <section class="gallery">
-            TODO Por hacer
+        <section>
+            <h1>Galería de imágenes</h1>
+            <div class="gallery">
+                <a href="../img/common/Img-01.png" data-lightbox="roadtrip" data-title="Desde la izquierda: Edd (Doble D), Eddy, y Ed.">
+                    <img src="../img/common/Img-01.min.png" alt="Los tres personajes principales de la serie">
+                </a>
+                <a href="../img/common/Img-02.jpg" data-lightbox="roadtrip" data-title="Las chuches (Caramelos en Latinoamérica, Jawbreakers en US), unos caramelos macizos de gran tamaño que los Eds intentan conseguir en cada capítulo.">
+                    <img src="../img/common/Img-02.min.jpg" alt="Los caramelos que tanto intentar conseguir Los Eds">
+                </a>
+                <a href="../img/common/Img-03.jpg" data-lightbox="roadtrip" data-title="Los Eds junto con Jonny y Tablón intentando escapar de la escuela.">
+                    <img src="../img/common/Img-03.min.jpg" alt="Los Eds junto con Jonny y Tablón intentando escapar de la escuela">
+                </a>
+                <a href="../img/common/Img-04.jpg" data-lightbox="roadtrip" data-title="Los Eds conociendo a Las Crueles.">
+                    <img src="../img/common/Img-04.min.jpg" alt="Los Eds conociendo a Las Crueles">
+                </a>
+                <a href="../img/common/Img-05.jpg" data-lightbox="roadtrip" data-title="Este debe ser uno de los momentos más inquietantes de la joven vida de los Eds.">
+                    <img src="../img/common/Img-05.min.jpg" alt="Ed cortando la realidad con un serrucho">
+                </a>
+                <a href="../img/common/Img-06.jpg" data-lightbox="roadtrip" data-title="El barrio donde viven todos los personajes y transcurren los episodios de la serie.">
+                    <img src="../img/common/Img-06.min.jpg" alt="El barrio donde viven todos los personajes y transcurren los episodios de la serie">
+                </a>
+                <a href="../img/common/Img-07.jpg" data-lightbox="roadtrip" data-title="Una de las bicicletas personalizadas de moda.">
+                    <img src="../img/common/Img-07.min.jpg" alt="Bicicleta de último modelo">
+                </a>
+                <a href="../img/common/Img-08.jpg" data-lightbox="roadtrip" data-title="Sarah gritándole al Dr. Edd">
+                    <img src="../img/common/Img-08.min.jpg" alt="arah gritándole al Dr. Edd">
+                </a>
+                <a href="../img/common/Img-09.jpg" data-lightbox="roadtrip" data-title="La colección semanal de los sombreros de Edd.">
+                    <img src="../img/common/Img-09.min.jpg" alt="La colección semanal de los sombreros de Edd">
+                </a>
+                <a href="../img/common/Img-10.jpg" data-lightbox="roadtrip" data-title="Jonny tratando de explicar cómo nacen los bebés.">
+                    <img src="../img/common/Img-10.min.jpg" alt="Jonny tratando de explicar cómo nacen los bebés">
+                </a>
+                <a href="../img/common/Img-11.jpg" data-lightbox="roadtrip" data-title="La única escuela que aparece en toda la serie y todos los personajes están matriculados en ella.">
+                    <img src="../img/common/Img-11.min.jpg" alt="La escuela Peach Creek Jr. High">
+                </a>
+                <a href="../img/common/Img-12.jpg" data-lightbox="roadtrip" data-title="Los Eds comiendo caramelos.">
+                    <img src="../img/common/Img-12.min.jpg" alt="Los Eds comiendo caramelos">
+                </a>
+            </div>
         </section>
         <!-- Footer -->
         <footer>
@@ -41,6 +80,16 @@
     </div>
     <!-- JS -->
     <script src="https://kit.fontawesome.com/0465e06944.js" crossorigin="anonymous"></script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+            "albumLabel": "Imagen %1 de %2",
+            "disableScrolling": true,
+            "fadeDuration": 250,
+            "imageFadeDuration": 250,
+            "wrapAround": true
+        });
+    </script>
     <script src="../js/main.js"></script>
 </body>
 </html>

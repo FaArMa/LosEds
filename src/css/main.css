@@ -141,6 +141,25 @@ table td {
     text-align: left;
 }
 
+.gallery {
+    text-align: center;
+    margin-top: 1ch;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery a img {
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+}
+
+.gallery a img:hover {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
 footer {
     align-items: center;
     border: 1px solid #000000;
