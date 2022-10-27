@@ -105,13 +105,49 @@ table thead tr th {
     border-color: inherit;
 }
 
-table tr:hover {
+/* Le hago :hover a toda la fila...aunque en episodes.html necesito de JS para que sea realmente así. :c! */
+table tr:hover,
+table tr:hover + tr td:only-child {
     background-color: #EBEBEB;
 }
+
 
 table td {
     border: 1px solid #cccccc;
     padding: 10px 5px;
+}
+
+/* Le aplico esto solamente a la primer columna que tenga más de un hijo (episodes.html básicamente) */
+.table-season-1 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #ea868f;
+}
+
+.table-season-2 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #e35d6a;
+}
+
+.table-season-3 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #dc3545;
+}
+
+.table-season-4 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #b02a37;
+}
+
+.table-season-5 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #842029;
+}
+
+.table-season-6 td:is(:nth-child(1)):not(:only-child) {
+    background-color: #58151c;
+}
+
+.table-specials td:is(:nth-child(1)):not(:only-child) {
+    background-color: #fd7e14;
+}
+
+.table-movies td:is(:nth-child(1)):not(:only-child) {
+    background-color: #ffc107;
 }
 
 .bg-ed {
