@@ -105,9 +105,25 @@ table thead tr th {
     border-color: inherit;
 }
 
+table tr:hover {
+    background-color: #EBEBEB;
+}
+
 table td {
     border: 1px solid #cccccc;
     padding: 10px 5px;
+}
+
+.bg-ed {
+    background-color: #9fb730;
+}
+
+.bg-edd {
+    background-color: #f89520;
+}
+
+.bg-eddy {
+    background-color: #f8ed1d;
 }
 
 .characters {
