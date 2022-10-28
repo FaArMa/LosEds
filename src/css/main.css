@@ -214,6 +214,62 @@ table td {
     filter: brightness(1);
 }
 
+.contact-form {
+    -webkit-filter: brightness(0.75);
+    background-color: #dccfe1;
+    background-image: url(../img/common/Intro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-size: cover;*/
+    border: 1px solid #000000;
+    filter: brightness(0.75);
+    height: 512px;
+    margin: 1ch auto;
+    padding: 1ch;
+}
+
+.contact-form form {
+    -ms-transform: translateY(-50%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: #ffffff40;
+    padding: 1ch;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact-form label {
+    background: #000000;
+    background: linear-gradient(90deg, #00000080 0%, #000000 50%, #00000080 100%);
+    color: #ffffff;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 1ch auto;
+    padding: 1ch;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+    height: 2rem;
+    resize: none;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 8rem;
+}
+
+.contact-form button {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 2.5rem;
+}
+
 footer {
     align-items: center;
     border: 1px solid #000000;
