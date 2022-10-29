@@ -70,7 +70,9 @@ nav ul li a:hover {
 
 section p img {
     float: right;
+    height: 56px;
     margin: 1ch;
+    width: 256px;
 }
 
 h1 {
@@ -176,6 +178,11 @@ table td {
     padding: 0.25rem;
 }
 
+.characters figure img {
+    height: 243px;
+    width: 128px;
+}
+
 .characters figcaption {
     background-color: #000000;
     color: #FFFFFF;
@@ -207,6 +214,8 @@ table td {
 .gallery a img {
     -webkit-filter: brightness(0.9);
     filter: brightness(0.9);
+    height: 128px;
+    width: 128px;
 }
 
 .gallery a img:hover {
