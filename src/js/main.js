@@ -13,6 +13,13 @@ window.onload = function() {
             "wrapAround": true
         });
     }
+    // Solo para la página de Contacto (entrar al easter egg manualmente)
+    if (window.location.pathname.match(/contact.html/)) {
+        document.getElementById("name").onblur = function() {
+            if (this.value === "EOW")
+                location.href = "../eg/index.html";
+        };
+    }
 };
 
 function navMenu() {

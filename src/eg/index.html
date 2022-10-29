@@ -1,0 +1,123 @@
+<!--
+    Un easter egg muy simple y que no verifica 50 cosas para que salga perfecto sin importar que.
+    Literalmente tenía terminado esto antes que la página de inicio, como se nota que vi la imagen y dije "esto tiene que ser mi easter egg". :P
+
+    Ed-of-War.jpg          : https://twitter.com/TheHeroicEffort/status/1571894163599249413
+    God-of-War-OST-Cut.mp3 : https://www.youtube.com/watch?v=y9hh91-2iaA
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter egg 🥚</title>
+    <meta name="description" content="Una página de broma (y oculta) sobre la serie Ed, Edd y Eddy. Sitio web creado para la parte práctica del segundo parcial de Laboratorio de Computación III">
+    <meta name="author" content="FaArMa">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <!-- CSS -->
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font: 16px 'Courier New', Courier, monospace;
+            padding: 2ch;
+        }
+
+        img {
+            max-height: 90vh;
+            max-width: 100%;
+            opacity: 0;
+            padding: 1ch;
+            transition: opacity 2.5s ease-in;
+            visibility: hidden;
+        }
+
+        .center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        span {
+            align-items: center;
+            display: none;
+            opacity: 1;
+            transition: opacity 2.5s linear;
+        }
+    </style>
+</head>
+<body class="center">
+    <!-- Sin JS y sin sonido FaArMa pierde la cabeza -->
+    <!-- Y ni hablemos cuando alguien lo vea desde un dispositivo y/o velocidad de internet que no vaya tan rápido -->
+    <noscript>
+        <p>Tenes que tener <b>JavaScript</b> activado!</p>
+        <p><a href="../../index.html">Volver</a></p>
+    </noscript>
+    <!-- Portada -->
+    <span>
+        <img src="Ed-of-War.jpg" alt="Portada de Ed of War para la PlayStation 5">
+    </span>
+    <!-- Audio -->
+    <audio src="God-of-War-OST-Cut.mp3" type="audio/mpeg" controls autoplay muted preload="auto" onplay="sndplay();">
+        <p>Tu navegador no soporta el elemento <b>audio</b></p>
+        <p><a href="../../index.html">Volver</a></p>
+    </audio>
+    <!-- JS -->
+    <script>
+        function sndplay() {
+            const spa = document.querySelector("span");
+            const snd = document.querySelector("audio");
+            snd.style.display = "none";
+            snd.volume = 1;
+            snd.playbackRate = 1;
+            snd.currentTime = 0;
+            snd.muted = false;
+            snd.play();
+            spa.style.display = "inherit";
+            borderplay();
+        }
+
+        // Sin eso no vivimos
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        const borderplay = async() => {
+            const spa = document.querySelector("span");
+            await delay(4000);
+            spa.style.borderLeft = "1px solid #e12f29";
+            await delay(3400);
+            spa.style.borderBottom = "1px solid #e12f29";
+            await delay(3355);
+            spa.style.borderRight = "1px solid #e12f29";
+            await delay(3286);
+            spa.style.borderTop = "1px solid #e12f29";
+            await delay(959);
+            document.title = "Ed of War";
+            const img = document.querySelector("img");
+            img.style.visibility = "visible";
+            img.style.opacity = 1;
+            // A los 15s eliminar todo
+            await delay(15000);
+            spa.style.opacity = 0;
+            // A los 3000 ms volver a la página de inicio
+            await delay(3000);
+            location.replace("../../index.html");
+        };
+    </script>
+</body>
+</html>
