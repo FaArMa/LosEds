@@ -14,3 +14,7 @@ Desarrollar un sitio web completo de 1300 px de ancho máximo para Escritorio y 
 8. Todo el contenido utilizado debe tener su correspondiente etiqueta HTML.
 9. Debe tener una consistencia de Interfaz (sistema entendible de constantes y variables en todas las pantallas)
 10. Se debe usar una función en JavaScript para activar la versión para celulares del menú del sitio.
+
+## Aviso
+1. Fecha de entrega para el 31/10/2022, así que si ves cambios posteriores es porque quise terminar de corregir y/o mejorar ciertas cosas.
+2. jQuery@3.4.1 (`lightbox-plus-jquery.min.js`) tiene [2 vulnerabilidades](https://security.snyk.io/package/npm/jquery).
