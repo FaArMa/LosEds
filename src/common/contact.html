@@ -20,7 +20,7 @@
         <!-- Header -->
         <header>
             <nav id="navbar">
-                <a href="#" class="nav-icon" onclick="NavMenu(); return false;" title="Barra de navegación"><i class="fa-solid fa-bars"></i></a>
+                <a href="#" class="nav-icon" title="Barra de navegación"><i class="fa-solid fa-bars"></i></a>
                 <ul>
                     <li><a href="../../index.html">Inicio</a></li>
                     <li><a href="episodes.html">Episodios</a></li>
@@ -34,7 +34,7 @@
         <section>
             <h1>Contacto</h1>
             <div class="contact-form">
-                <form action="https://example.com/" method="post">
+                <form action="https://example.com/" method="post" onsubmit="return showFormData();">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" placeholder="Escribe tu nombre..." required>
                     <label for="email">Correo electrónico</label>
